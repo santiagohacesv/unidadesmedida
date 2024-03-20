@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+.title{
+    font-size: 3rem;
+    background: none;
+    color: crimson;
+    border-bottom: none;
+    margin: 40px;
+    text-align: center; }
+
+@media screen and (min-width: 700px){
+    body{
+        background-color: chocolate; 
+    } 
+}
+
+@media screen and (min-width:400px), (max-width:700px) {
+    .title {
+        background: #000;
+        color: #fff;
+    }
+} /*Este media se activa cuando la pantalla esta entre 400px y 700px, y activa los colores indicados. */
+
+@media screen and (max-width:600px) {
+    .title {
+        text-align: left;
+        background: steelblue;
+    }
+} /* Este media  se activa cuando sobrepasa los 600px, y alinea el texto a la izquierda y el color de 
+fondo azul claro.*/
+
+@media print {
+    .title {
+        color: steelblue;
+        font-size: 5rem;
+        text-align: right;
+        font-family: cursive;
+    }
+} /*Este media se activa cuando se va a imprimir. */
